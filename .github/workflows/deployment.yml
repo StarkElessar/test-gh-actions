@@ -1,16 +1,7 @@
 name: Deploy React App
-on: [push]
+on: [ push ]
 jobs:
-#  test:
-#    runs-on: ubuntu-22.04
-#    steps:
-#      - name: Get repository code
-#        uses: actions/checkout@v4
-#      - name: Install dependencies
-#        run: npm install
-#      - name: Test Application
-#        run: npm run test
-  lint:
+  deploy:
     runs-on: ubuntu-22.04
     steps:
       - name: Get repository code
@@ -19,14 +10,6 @@ jobs:
         run: npm install
       - name: Lint Application
         run: npm run lint
-  build-app:
-    runs-on: ubuntu-22.04
-    needs: lint
-    steps:
-      - name: Get repository code
-        uses: actions/checkout@v4
-      - name: Install dependencies
-        run: npm install
       - name: Build Application
         run: npm run build
       - name: Deploy
