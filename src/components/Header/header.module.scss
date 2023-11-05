@@ -1,0 +1,31 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-block: 12px;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	ul {
+		display: flex;
+		gap: 20px;
+	}
+}
+
+.link {
+	color: #333;
+	transition: color .2s ease-in-out;
+
+	&:hover {
+		color: #0a957d;
+	}
+
+	&_active {
+		color: #0a957d;
+		text-decoration: underline;
+	}
+}
