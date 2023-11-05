@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+      - '.github/workflows/*'
+
+env:
+  NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+  NGROK_DOMAIN: ${{ secrets.NGROK_DOMAIN }}
 
 jobs:
   build:
