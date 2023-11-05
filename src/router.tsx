@@ -18,7 +18,7 @@ export const router = createBrowserRouter([
 					return {
 						Component: HomePage,
 						loader: getTodos
-					}
+					};
 				}
 			},
 			{
@@ -30,7 +30,7 @@ export const router = createBrowserRouter([
 					return {
 						Component: CartPage,
 						loader: getCartItems,
-					}
+					};
 				},
 
 			}
@@ -40,4 +40,4 @@ export const router = createBrowserRouter([
 		path: '*',
 		element: <NoMatchPage/>
 	}
-])
+]);
