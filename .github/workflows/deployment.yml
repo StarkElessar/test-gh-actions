@@ -21,6 +21,7 @@ jobs:
         run: npm run lint
   build-app:
     runs-on: ubuntu-22.04
+    needs: lint
     steps:
       - name: Get repository code
         uses: actions/checkout@v4
