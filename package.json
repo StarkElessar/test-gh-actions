@@ -2,7 +2,6 @@
   "name": "new-react-router-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/",
   "dependencies": {
     "@ngrok/ngrok": "^0.9.0",
     "@testing-library/jest-dom": "^5.17.0",
